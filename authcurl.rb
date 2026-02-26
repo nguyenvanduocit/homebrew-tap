@@ -5,20 +5,20 @@
 class Authcurl < Formula
   desc "authcurl - authenticated curl wrapper"
   homepage "https://github.com/nguyenvanduocit/authcurl"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nguyenvanduocit/authcurl/releases/download/v0.1.0/authcurl_0.1.0_darwin_amd64.zip"
-      sha256 "e7160402ee17783a79677dc2e90930c71f01f7808055c6c6764057241ad42ad0"
+      url "https://github.com/nguyenvanduocit/authcurl/releases/download/v0.1.1/authcurl_0.1.1_darwin_amd64.zip"
+      sha256 "960e1ab6cfd99456210e982c2215c0c674f278ef98a0cf72bc43355d75a0b804"
 
       define_method(:install) do
         bin.install "authcurl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nguyenvanduocit/authcurl/releases/download/v0.1.0/authcurl_0.1.0_darwin_arm64.zip"
-      sha256 "9a6df56e4e8e8501dbedf44d7181b92326fb1d8a24f3a28ffdcbfbc2a8814785"
+      url "https://github.com/nguyenvanduocit/authcurl/releases/download/v0.1.1/authcurl_0.1.1_darwin_arm64.zip"
+      sha256 "8e52fcef4eb058df9f17a8b84f2ecd67f9eb606e4cbf6ea269ed4d0af98d2bd7"
 
       define_method(:install) do
         bin.install "authcurl"
@@ -28,15 +28,15 @@ class Authcurl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/authcurl/releases/download/v0.1.0/authcurl_0.1.0_linux_amd64.tar.gz"
-      sha256 "1fc9bbdf601c77f09d20eef3e3f9d5f9499ca5f800709841e3014c1271f50073"
+      url "https://github.com/nguyenvanduocit/authcurl/releases/download/v0.1.1/authcurl_0.1.1_linux_amd64.tar.gz"
+      sha256 "b392626bdea2bddffae0ea6033ed447ed4a7a9594c93ceee277fcff6c338b453"
       define_method(:install) do
         bin.install "authcurl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/authcurl/releases/download/v0.1.0/authcurl_0.1.0_linux_arm64.tar.gz"
-      sha256 "06630f9550df7138c102507a761ebbca62e0c2046bb2c765844e45c2cb171b8d"
+      url "https://github.com/nguyenvanduocit/authcurl/releases/download/v0.1.1/authcurl_0.1.1_linux_arm64.tar.gz"
+      sha256 "d7f81d72c45383910bf66d8b99d1d476d9c7b206817eb09e6852395d67451441"
       define_method(:install) do
         bin.install "authcurl"
       end
