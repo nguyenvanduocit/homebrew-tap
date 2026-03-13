@@ -5,20 +5,20 @@
 class GoogleChatCli < Formula
   desc "google-chat-cli - CLI tool"
   homepage "https://github.com/nguyenvanduocit/google-chat-mcp"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.0/google-chat-cli_darwin_amd64.tar.gz"
-      sha256 "6715bd4205cbf7f2eaebb85f89951e52054685c27be7a00e6120850eebb3ea35"
+      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.1/google-chat-cli_darwin_amd64.tar.gz"
+      sha256 "64874359385f82da94acb4868f221e3941c390c60a553832b65ac5112a44ef1b"
 
       define_method(:install) do
         bin.install "google-chat-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.0/google-chat-cli_darwin_arm64.tar.gz"
-      sha256 "0b3983c0d307e9b14c5aed2a50a3efa146298185ad295fbafef47673fd6e8320"
+      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.1/google-chat-cli_darwin_arm64.tar.gz"
+      sha256 "4c734514d4d912081064c26a430bf1d72e6ae8a7f60eee6e4ed9a751465ed9a0"
 
       define_method(:install) do
         bin.install "google-chat-cli"
@@ -28,15 +28,15 @@ class GoogleChatCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.0/google-chat-cli_linux_amd64.tar.gz"
-      sha256 "defcfe1d408acfcae674c837f9d4a10ce199a04641e0e3d1c20ca9695c1cee49"
+      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.1/google-chat-cli_linux_amd64.tar.gz"
+      sha256 "dcd1f104390f7251f2412266730176873ce64a8c7ce15d2f5efa8321d5668cb8"
       define_method(:install) do
         bin.install "google-chat-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.0/google-chat-cli_linux_arm64.tar.gz"
-      sha256 "8c9955c2dc941868fb9f867734147317ba52151e42f438e16b3e0b983271eb6e"
+      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.1/google-chat-cli_linux_arm64.tar.gz"
+      sha256 "5d42544a9df229f6f37d28c16283107577e175379ed3ad52da8ffe10c4f88308"
       define_method(:install) do
         bin.install "google-chat-cli"
       end
