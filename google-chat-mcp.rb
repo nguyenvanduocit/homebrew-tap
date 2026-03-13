@@ -5,20 +5,20 @@
 class GoogleChatMcp < Formula
   desc "google-chat-mcp - MCP server"
   homepage "https://github.com/nguyenvanduocit/google-chat-mcp"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.0/google-chat-mcp_darwin_amd64.tar.gz"
-      sha256 "62f7b84222187541bc2ff5f79f02ed2d5973c69abde5cf72dfe244068389782e"
+      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.1/google-chat-mcp_darwin_amd64.tar.gz"
+      sha256 "b5e3ec68b98fa8ff854e09e01bbbd0f4a3e8967b49cec70a44c76ee2241fa3d4"
 
       define_method(:install) do
         bin.install "google-chat-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.0/google-chat-mcp_darwin_arm64.tar.gz"
-      sha256 "e9ffab35722e590a7b4ab617b9871714deedbd6a77377db182e782f0c03b556c"
+      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.1/google-chat-mcp_darwin_arm64.tar.gz"
+      sha256 "f90a33c2ca1501225c5a1bb457fe3f9661bbfd9beb2738138043f2cdc7423167"
 
       define_method(:install) do
         bin.install "google-chat-mcp"
@@ -28,15 +28,15 @@ class GoogleChatMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.0/google-chat-mcp_linux_amd64.tar.gz"
-      sha256 "42fd36e737cc7414fedfdfca8d21d602e117b0c191d3ea54b61bf956be8e203e"
+      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.1/google-chat-mcp_linux_amd64.tar.gz"
+      sha256 "8affb1febbff39013659995f02afea41ef99d6e2bef29357d3748b834e6eeb35"
       define_method(:install) do
         bin.install "google-chat-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.0/google-chat-mcp_linux_arm64.tar.gz"
-      sha256 "1d5706bd9eddee0c51d25156a9d5af8a3984fd10c76c56a475962dd7ebe18f10"
+      url "https://github.com/nguyenvanduocit/google-chat-mcp/releases/download/v1.0.1/google-chat-mcp_linux_arm64.tar.gz"
+      sha256 "8cc89583face793c85b36f3bdc2787434ca12d65db80c63946f3c8600c48901c"
       define_method(:install) do
         bin.install "google-chat-mcp"
       end
