@@ -5,20 +5,20 @@
 class JiraMcp < Formula
   desc "jira-mcp - MCP server"
   homepage "https://github.com/nguyenvanduocit/jira-mcp"
-  version "1.0.3"
+  version "1.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nguyenvanduocit/jira-mcp/releases/download/v1.0.3/jira-mcp_darwin_amd64.tar.gz"
-      sha256 "44fc105257fc39cdfbbb8b7640abccf7f2a3c6a248b0df94f2222a2c53d932f4"
+      url "https://github.com/nguyenvanduocit/jira-mcp/releases/download/v1.1.0/jira-mcp_darwin_amd64.tar.gz"
+      sha256 "f7b709b378b8d93383f588170f9f38e2f8d7032bd06044c6e80ace29bb968af1"
 
       define_method(:install) do
         bin.install "jira-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nguyenvanduocit/jira-mcp/releases/download/v1.0.3/jira-mcp_darwin_arm64.tar.gz"
-      sha256 "cbf61e232a1b3a5865b53170c94153405e4c0120bc272da33f9b22716756eb7b"
+      url "https://github.com/nguyenvanduocit/jira-mcp/releases/download/v1.1.0/jira-mcp_darwin_arm64.tar.gz"
+      sha256 "798b9c38407460b2e8b23507bf16f7b13e7179519a8f87bb8594449e5198a319"
 
       define_method(:install) do
         bin.install "jira-mcp"
@@ -28,15 +28,15 @@ class JiraMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/jira-mcp/releases/download/v1.0.3/jira-mcp_linux_amd64.tar.gz"
-      sha256 "e4b47f2d8b71ea1724d8d3afae5c20c650456806437b5373a1e86c859325cd57"
+      url "https://github.com/nguyenvanduocit/jira-mcp/releases/download/v1.1.0/jira-mcp_linux_amd64.tar.gz"
+      sha256 "27fee0785bae22ef7b12ac5015fbc130331ce02dbf6105cba6b8b53f84612eee"
       define_method(:install) do
         bin.install "jira-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/jira-mcp/releases/download/v1.0.3/jira-mcp_linux_arm64.tar.gz"
-      sha256 "836deabb7cb1e33e3905e8dfd8c6220655f1589aee14ad5d08160f80befc25cb"
+      url "https://github.com/nguyenvanduocit/jira-mcp/releases/download/v1.1.0/jira-mcp_linux_arm64.tar.gz"
+      sha256 "48dbd34cea753c42f176a7b8f29bab6adefc85e4c8b3a867638b724ef4a6a06d"
       define_method(:install) do
         bin.install "jira-mcp"
       end
