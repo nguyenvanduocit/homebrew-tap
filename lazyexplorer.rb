@@ -5,21 +5,21 @@
 class Lazyexplorer < Formula
   desc "Lazygit-style terminal file explorer for the vibe-code workflow. Two panels, async preview, opt-in Datadog telemetry."
   homepage "https://github.com/nguyenvanduocit/lazyexplorer"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nguyenvanduocit/lazyexplorer/releases/download/v0.2.0/lazyexplorer_0.2.0_darwin_x86_64.tar.gz"
-      sha256 "ab9239b25eeff798ce6b2aec09e23fd596fbd5ae92251e6d3acb28d09c9dd917"
+      url "https://github.com/nguyenvanduocit/lazyexplorer/releases/download/v0.3.0/lazyexplorer_0.3.0_darwin_x86_64.tar.gz"
+      sha256 "e519f06423c76cadfdec74ee92aee4b0ce02c9af1c71c4271cd3ab512a41878d"
 
       define_method(:install) do
         bin.install "lazyexplorer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nguyenvanduocit/lazyexplorer/releases/download/v0.2.0/lazyexplorer_0.2.0_darwin_arm64.tar.gz"
-      sha256 "243a4d5c07f23233d1f1aa6d1595c60155b6eecac89fe6a67574fc9c2ec2667b"
+      url "https://github.com/nguyenvanduocit/lazyexplorer/releases/download/v0.3.0/lazyexplorer_0.3.0_darwin_arm64.tar.gz"
+      sha256 "ea5d0ea79a2d723c6d934d3d6fc6018eac2c53db0f1e055d91d306b895170925"
 
       define_method(:install) do
         bin.install "lazyexplorer"
@@ -29,15 +29,15 @@ class Lazyexplorer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/lazyexplorer/releases/download/v0.2.0/lazyexplorer_0.2.0_linux_x86_64.tar.gz"
-      sha256 "3c6ad5d66188380eb9118da6876309a9b53a821f603ffa6bfb656c8265f5e3ec"
+      url "https://github.com/nguyenvanduocit/lazyexplorer/releases/download/v0.3.0/lazyexplorer_0.3.0_linux_x86_64.tar.gz"
+      sha256 "64dc90f161f5d375eaae32c22c7ead778738443f72f896a740ec39e7ce28647e"
       define_method(:install) do
         bin.install "lazyexplorer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/lazyexplorer/releases/download/v0.2.0/lazyexplorer_0.2.0_linux_arm64.tar.gz"
-      sha256 "03d4c0f179c6d69a06f2420290de85c3f08e1370c8b3edbd0cd5a01e3f31b421"
+      url "https://github.com/nguyenvanduocit/lazyexplorer/releases/download/v0.3.0/lazyexplorer_0.3.0_linux_arm64.tar.gz"
+      sha256 "6e8d6500c954d061652b5eaa37d5985b9d9019a9ced93091c928b72d2ebbbbce"
       define_method(:install) do
         bin.install "lazyexplorer"
       end
