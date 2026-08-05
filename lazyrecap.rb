@@ -5,21 +5,21 @@
 class Lazyrecap < Formula
   desc "Terminal dashboard for the coding-agent sessions running in this directory — who is working, who is waiting for you, and a plain-language recap."
   homepage "https://github.com/nguyenvanduocit/lazyrecap"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nguyenvanduocit/lazyrecap/releases/download/v0.2.0/lazyrecap_0.2.0_darwin_x86_64.tar.gz"
-      sha256 "973fc31fc3708ad3c11e9286e16609e230832e481ec7bae2fbff932ce29ffc91"
+      url "https://github.com/nguyenvanduocit/lazyrecap/releases/download/v0.3.0/lazyrecap_0.3.0_darwin_x86_64.tar.gz"
+      sha256 "7f822e5c959afe15bd68f144802bb1bfac7ff0ce825345532647157e98b35ac7"
 
       define_method(:install) do
         bin.install "lazyrecap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nguyenvanduocit/lazyrecap/releases/download/v0.2.0/lazyrecap_0.2.0_darwin_arm64.tar.gz"
-      sha256 "c256c2b04fe7abe91f412432fef256e214ed4fd2d0174f1665ca8b351dadb103"
+      url "https://github.com/nguyenvanduocit/lazyrecap/releases/download/v0.3.0/lazyrecap_0.3.0_darwin_arm64.tar.gz"
+      sha256 "9000efdb6f01080672d6cdfdd1878c8ef2b4fcff7d3d5e016e9dfbd68a49f332"
 
       define_method(:install) do
         bin.install "lazyrecap"
@@ -29,15 +29,15 @@ class Lazyrecap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/lazyrecap/releases/download/v0.2.0/lazyrecap_0.2.0_linux_x86_64.tar.gz"
-      sha256 "ea553919c74c00cadfde781402642307f5e887d39aa10e2b757c59e0094ceea5"
+      url "https://github.com/nguyenvanduocit/lazyrecap/releases/download/v0.3.0/lazyrecap_0.3.0_linux_x86_64.tar.gz"
+      sha256 "d48ea032667ee47726217d13fd458dce901fbbb67746f98c7c2f97d680b8886b"
       define_method(:install) do
         bin.install "lazyrecap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nguyenvanduocit/lazyrecap/releases/download/v0.2.0/lazyrecap_0.2.0_linux_arm64.tar.gz"
-      sha256 "d2334072a99964bb75d52faa5548a8cbce60d2e2ab2da110327edf0c1f92d29c"
+      url "https://github.com/nguyenvanduocit/lazyrecap/releases/download/v0.3.0/lazyrecap_0.3.0_linux_arm64.tar.gz"
+      sha256 "4a2d69aeb74294ed3c1aaa7596279693950d8ab9585211e8d76ae5cc33628b0a"
       define_method(:install) do
         bin.install "lazyrecap"
       end
