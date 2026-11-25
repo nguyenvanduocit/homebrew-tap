@@ -5,7 +5,6 @@
 class ClaudeOauth < Formula
   desc "Manage Claude Code OAuth tokens across accounts and run Claude with any of them"
   homepage "https://github.com/nguyenvanduocit/claude-oauth"
-  version "0.1.0"
   license "MIT"
 
   on_macos do
